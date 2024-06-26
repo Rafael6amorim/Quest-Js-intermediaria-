@@ -1,0 +1,80 @@
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.discricao-do-formulario{
+    color: white;
+    margin-right: 6rem;
+}
+.discricao-do-formulario .titulo{
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 2.344rem;
+    margin-bottom: 1.1rem;
+}
+.discricao-do-formulario .paragrafo{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.758rem;
+    width: 30rem;
+    height: 5.4rem;
+}
+
+.formulario{
+    background-color: white;
+    width: 340px;
+    height: 378px;
+
+}
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px ;
+}
+.formulario form .input{
+    width: 298.01px;
+    height: 35.11px;
+    padding-left:10px ;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.formulario form .input.texto{
+    height: 100px;
+}
+.formulario form .input.texto::placeholder{
+    padding-top: 1rem;
+}
+.formulario form .botao{
+    width: 298.1px;
+    height: 41.13px;
+    margin-top: 2rem;
+    color: white;
+    border: transparent;
+    background-color: #3CCC87;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.formulario form .botao:hover{
+    background-color: #3ccc86ce;
+}
+.campo-obrigatorio{
+    display: none;
+}
+
+.campo-obrigatorio-ativo{
+    color: red;
+    font-size: 0.9rem;
+    font-weight: 400;
+    display: block;
+}
+/* Campos ativos */
+
+.formulario form .input.input-ativo-campo-obrigatorio{
+    border: 2px solid red;
+}
+.formulario form .input.input-ativo-tudo-ok{
+    border: 2px solid green; 
+}
